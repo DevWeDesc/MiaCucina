@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mia Cucina</title>
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link rel="stylesheet" href="./styles/card.css"/>
+    <link rel="stylesheet" href="styles/dinner.css">
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,600&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+  
+  </head>
+  <body>
+    <header id="header">
+
+      <nav class="container">
+        <img
+          src="./assets/LogoMIA.png"
+          alt=""
+          id="mainlogo"
+          onclick="navigateHome()"
+        />
+        <div class="subNavs">
+          <div class="subMenus">
+            <img src="assets/fotos/Alarm.svg" id="imgSubmenu" alt="" />
+            <a class="" href="#footer">Horários</a>
+          </div>
+          <div class="subMenus">
+            <img src="assets/fotos/PhoneCall.svg"  id="imgSubmenu" alt="" />
+            <a>(11) 4992-1643</a>
+          </div>
+        </div>
+  
+     
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="navTitle" href="#home">Início</a></li>
+            <li><a class="navTitle" href="#services">Cardápio</a></li>
+            <li><a class="navTitle" href="#contact">Reserva</a></li>
+         
+            <li><a class="navTitle" href="galeria.html" target="_blank">Galeria</a></li>
+         
+           
+           
+          </ul>
+        </div>
+        <!-- /menu -->
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+
+          <section  id="home" class="section swiper-slide" data-swiper-autoplay="3000" >
+            <img src="" id="overlay" alt="">
+            <div class="textContainer">
+              <p class="mainDescription">Bem vindos ao <span class="mainTitle">Mia Cucina</span>, um restaurante italiano em um dos melhores bairro da região de Santo André, um local aconchegante que traz o melhor da Toscana. 
+              </p>
+              <div class="buttonMainContainer">
+                <button onclick="useNavigate('./galeria.html')" class="buttonMain">Galeria</button>
+                <button  onclick="useNavigate('https://api.whatsapp.com/send?phone=+551149921643&text=Oi! Gostaria de fazer uma reserva')"  class="buttonSecondary">Contato</button>
+              </div>
+            </div>
+          </section>
+
+          
+          <section class="section swiper-slide" id="space" data-swiper-autoplay="3000">
+            <img src="" id="overlay" alt="">
+            <div class="spaceContainer">
+              <h1 class="spaceTitle">Nosso Espaço</h1>
+              <p class="spaceDescription">Um espaço onde a atmosfera italiana ganha vida. Um salão amplo com luz natural e uma varanda incrível e charmosa para reunir famílias e amigos. </p>
+              <div class="spaceMainContainer">
+               <button onclick="useNavigate('https://api.whatsapp.com/send?phone=+551149921643&text=Oi! Gostaria de fazer uma reserva')"  class="buttonSpace">Faça sua reserva</button>
+               <button onclick="useNavigate('https://manduu.com.br')"  class="buttonSpaceBlur"> Conheça o Manduu </button>
+              </div>
+          
+            </div>
+          </section>
+
+
+          <section class="section swiper-slide" id="wines" data-swiper-autoplay="3000">
+            <img src="" id="overlay" alt="">
+            <div class="winesContainer">
+             <h2 class="winesTitle" >Vinhos e Bebidas</h2>
+             <p class="winesDescription">Aonde os melhores vinhos e bebidas se unem para criar uma experiência única.</p>
+             <div class="winesButtonContainer">
+              <button onclick="useNavigate('#contact')" class="buttonSWinesBlur">Cardápio</button>
+             </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+            
+      <!-- HOME -->
+
+
+
+    
+        <!-- ABOUT -->
+
+
+
+
+        <section  id="services" class="pricing-table"  >
+          <h1 id="underTitle">Cardápios</h1>
+          <p class="underText">Cardápios exclusivo no Mia Cucicna para você experimentar a verdadeira comida italiana</p>
+          <section  id="services" class="pricing-table-two"  >
+            <section  id="sectionMenu" class="ultimate best" style="--delay: 210ms">
+   
+              <div class="inner">
+                <p>Cardápio Geral</p>
+                <div class="title-price">
+                  <strong class="titleExe">Todas Opções</strong>
+                  <span class="price"
+                    >
+                    <i class="ph-bold ph-fork-knife"></i>
+                  </span>
+                </div>
+                <a href="./CardapioGeral.pdf" target="_blank"> <button class="secondary">Ver cardápio</button></a>
+               
+                <ul class="cardUl">
+                  <li>
+                    <i class="ph ph-check"></i>
+                    <span>Massas produzidas na casa</span>
+                    <i class="ph ph-info"></i>
+                  </li>
+                  <li>
+                    <i class="ph ph-check"></i>
+                    <span>100% comida italiana</span>
+                    <i class="ph ph-info"></i>
+                  </li>
+             
+              
+                </ul>
+  
+       
+              </div>
+    
+            </section>
+      
+            <section  id="sectionMenu" class="ultimate best" style="--delay: 210ms">
+   
+              <div class="inner">
+                <p>CARDÁPIO EXECUTIVO</p>
+                <div class="title-price">
+                  <strong class="titleExe">Executivo</strong>
+                  <span class="price"
+                    >
+                    <i class="ph-bold ph-cooking-pot"></i>
+                  </span>
+                </div>
+                <a href="./MenuExe.pdf" target="_blank"> <button class="secondary">Ver cardápio</button></a>
+               
+                <ul class="cardUl">
+                  <li>
+                    <i class="ph ph-check"></i>
+                    <span>Entradas </span>
+                    <i class="ph ph-info"></i>
+                  </li>
+                  <li>
+                    <i class="ph ph-check"></i>
+                    <span>Prato Principal</span>
+                    <i class="ph ph-info"></i>
+                  </li>
+                  <li>
+                    <i class="ph ph-check"></i>
+                    <span>Sobremesas</span>
+                    <i class="ph ph-info"></i>
+                  </li>
+                  <li>
+                    <p id="obsDescripiton" style="font-family: 'Open Sans', sans-serif;">Obs: Apenas almoço de segunda a sexta, das 12:00hrs as 15:00hrs</p>
+                  </li>
+            
+              
+                </ul>
+  
+       
+              </div>
+    
+            </section>
+      
+            <section id="sectionMenu" class="enterprise" style="--delay: 410ms">
+              <div class="inner">
+                <p>Adega</p>
+                <div class="title-price">
+                  <strong class="title">Vinhos e bebidas</strong>
+                  <span class="price"> <i class="ph-bold ph-wine"></i> </span>
+                </div>
+                
+                <a href="">  <button class="primary">Ver opções</button></a>
+              
+      
+                <ul class="cardUl">
+                  <li>
+                    <i class="ph ph-check"></i>
+                    <span
+                      >Vinhos unicos para todo tipo de gosto</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </section>
+          
+          </section>
+        
+        </section>
+        <div class="divider-1"></div>
+     
+
+   
+
+    
+
+
+      <!-- CONTACT -->
+      <div class="divider-1"></div>
+      <section class="section" id="contact">
+        <div class="container grid"  id="contact">
+          <div class="text">
+         
+            <h2 class="titleContact">Entre em contato conosco!</h2>
+            <p>
+              Entre em contato com a MiaCucina, queremos tirar suas dúvidas,
+              ouvir suas críticas e sugestões.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=+551149921643&text=Oi! Gostaria de fazer uma reserva"
+              target="_blank"
+              class="button"
+              ><i class="icon-phone"></i>Reservas e Informações</a
+            >
+            <div id="ManduuContainer">
+              <a  href="https://manduu.com.br" target="_blank" > <p >Conheça nosso outro restaurante do Grupo: </p></a>
+            
+              <div id="ManduuContent">
+                <a  class="manduuSocials"  href="https://manduu.com.br"><span id="Manduu">Manduu</span> </a>
+                 
+                <a class="manduuSocials" href="https://www.instagram.com/espaco_manduu/?hl=pt-br"><i class="icon-instagram"></i></a> 
+ 
+                <a class="manduuSocials" href="https://www.facebook.com/espacomanduu/">  <i class="icon-facebook"></i> </a>
+               
+       
+              </div>
+              
+            </div>
+          </div>
+      
+
+          <div class="links">
+            <ul class="grid">
+              <a href="https://api.whatsapp.com/send?phone=+551149921643&text=Oi! Gostaria de fazer uma reserva" target="_blank"><li><i class="icon-whatsapp"></i>Tell: (11) 4992-1643</li></a>
+              
+              <a
+                class="linkMaps"
+                href="https://www.google.com/maps/place/Mia+Cucina/@-23.6462011,-46.5422468,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce433741320aa9:0xd704adb5871c7946!8m2!3d-23.6462011!4d-46.5400581!16s%2Fg%2F11jsrnd3d7?entry=ttu"
+                target="_blank"
+              >
+                <li>
+                  <i class="icon-map-pin"></i>Rua das Paineiras Nº520 - Jardim,
+                  Santo André - SP
+                </li>
+              </a>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.831738856957!2d-46.54263838933051!3d-23.64619616462528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce433741320aa9%3A0xd704adb5871c7946!2sMia%20Cucina!5e0!3m2!1spt-BR!2sbr!4v1686747861000!5m2!1spt-BR!2sbr"
+                width="450"
+                height="350"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+  
+    </main>
+
+    <div class="divider-1"></div>
+    <footer class="section" id="footer">
+      <div class="container grid">
+        <div class="footer-ours">
+          <h3>HORÁRIO DE FUNCIONAMENTO</h3>
+          <p>De terça a sexta</p>
+          <span>12:00 ás 16:00</span>
+          <span>18:00 ás 23:00</span>
+          <p>Sábado</p>
+          <span>12:00 ás 23:00</span>
+          <p>Domingo</p>
+          <span>12:00 ás 16:00</span>
+        </div>
+
+        <div class="social">
+          <h3>Nossas redes</h3>
+          <div id="socialMedia">
+            <p>Conheça nosso</p>
+            <a
+              href="https://www.instagram.com/espaco_miacucina/"
+              target="_blank"
+            >
+              <i class="icon-instagram"></i>
+            </a>
+          </div>
+       
+        </div>
+        <div class="brand">
+          <a class="logo logo-alt" href="#home">MiaCucina.</a>
+          <p class="subtitle">©2023 MiaCucina.</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://api.whatsapp.com/send?phone=+551149921643&text=Oi! Gostaria de fazer uma reserva"
+      target="_blank"
+      class="back-to-top"
+    >
+      <img src="./assets/fotos/zap.svg" alt="" />
+    </a>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- main.js -->
+    <script src="nav.js"></script>
+    <script  defer src="main.js"></script>
+    <script src="swiper.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,163 @@
+@import './grid.css';
+@import './scrollbar.css';
+@import './responsivity.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimezeLegibility;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --picture-gradient: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Hepta Slab', serif;
+
+  padding: 14rem 13.4rem 1rem 11.1rem;
+
+  background: url(../assets/noise-bg.png);
+  background-color: #121214;
+
+  display: grid;
+  grid-template-columns: minmax(28rem, 38.5rem) minmax(75rem, 80rem);
+  justify-content: space-between;
+}
+
+.headline {
+  position: sticky;
+  top: 14rem;
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 3.2rem;
+}
+
+img:not([alt='Arrow Icon']) {
+  height: 100%;
+  width: 100%;
+
+  transition: 800ms ease-in-out;
+}
+
+section {
+  display: grid;
+  row-gap: 3.2rem;
+}
+
+section > .image-container {
+  max-width: 80rem;
+  width: 100%;
+  height: 40rem;
+}
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+  transition: 400ms ease-in-out;
+}
+
+.image-container .full-w {
+  width: 100%;
+}
+
+.image-container::after {
+  content: var(--text);
+
+  height: 7.3rem;
+  width: 100%;
+  padding-left: 2.4rem;
+
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #ffffff;
+
+  background: var(--picture-gradient);
+  transition: opacity 800ms ease-in-out;
+  opacity: 0;
+}
+
+.image-container:hover {
+  outline: 0.4rem solid #fff;
+}
+
+.image-container:hover::after {
+  opacity: 1;
+}
+
+.image-container:hover img {
+  transform: scale(2.1354);
+  transition: 800ms ease-in-out;
+}
+
+section > .image-container:hover img {
+  transform: scale(1.2);
+}
+
+@media (max-width: 1280px) {
+  body {
+    padding-inline: 6rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  body {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headline {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 780px) {
+  :root {
+    font-size: 48%;
+  }
+}
+
+@media (max-width: 610px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    height: 100%;
+  }
+}
