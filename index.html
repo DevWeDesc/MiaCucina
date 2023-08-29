@@ -7,6 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
     <title>Mia Cucina - Restaurante Italiano</title>
     <!-- Icones -->
     <link rel="stylesheet" href="assets/fonts/style.css" />
@@ -35,17 +36,17 @@
       <nav class="container">
         <img
           src="./assets/LogoMIA.png"
-          alt=""
+          alt="logo do mia cucina"
           id="mainlogo"
           onclick="navigateHome()"
         />
         <div class="subNavs">
           <div class="subMenus">
-            <img src="assets/fotos/Alarm.svg" id="imgSubmenu" alt="" />
+            <img src="assets/fotos/Alarm.svg" id="imgSubmenu" alt="iconei de relógio" />
             <a class="" href="#footer">Horários</a>
           </div>
           <div class="subMenus">
-            <img src="assets/fotos/PhoneCall.svg"  id="imgSubmenu" alt="" />
+            <img src="assets/fotos/PhoneCall.svg"  id="imgSubmenu" alt="iconei de um telefone" />
             <a>(11) 4992-1643</a>
           </div>
         </div>
@@ -76,7 +77,7 @@
         <div class="swiper-wrapper">
 
           <section  id="home" class="section swiper-slide" data-swiper-autoplay="3000" >
-            <img src="" id="overlay" alt="">
+            <img src="" id="overlay" alt="faixada externa do mia cucina">
             <div class="textContainer">
               <p class="mainDescription">Bem vindos ao <span class="mainTitle">Mia Cucina</span>, um restaurante italiano em um dos melhores bairro da região de Santo André, um local aconchegante que traz o melhor da Toscana. 
               </p>
@@ -89,9 +90,9 @@
 
           
           <section class="section swiper-slide" id="space" data-swiper-autoplay="3000">
-            <img src="" id="overlay" alt="">
+            <img src="" id="overlay" alt="ambiente interno do mia cucina">
             <div class="spaceContainer">
-              <h1 class="spaceTitle">Nosso Espaço</h1>
+              <h2 class="spaceTitle">Nosso Espaço</h2>
               <p class="spaceDescription">Um espaço onde a atmosfera italiana ganha vida. Um salão amplo com luz natural e uma varanda incrível e charmosa para reunir famílias e amigos. </p>
               <div class="spaceMainContainer">
                <button onclick="useNavigate('https://api.whatsapp.com/send?phone=+551149921643&text=Oi! Gostaria de fazer uma reserva')"  class="buttonSpace">Faça sua reserva</button>
@@ -103,7 +104,7 @@
 
 
           <section class="section swiper-slide" id="wines" data-swiper-autoplay="3000">
-            <img src="" id="overlay" alt="">
+            <img src="" id="overlay" alt="vinhos em exposição">
             <div class="winesContainer">
              <h2 class="winesTitle" >Vinhos e Bebidas</h2>
              <p class="winesDescription">Aonde os melhores vinhos e bebidas se unem para criar uma experiência única.</p>
@@ -232,18 +233,12 @@
         
         </section>
         <div class="divider-1"></div>
-     
-
-   
-
-    
-
 
       <!-- CONTACT -->
       <div class="divider-1"></div>
       <section class="section" id="contact">
         <div class="container grid"  id="contact">
-          <div class="text">
+          <div class="text" itemscope itemtype="http://schema.org/Restaurant">
          
             <h2 class="titleContact">Entre em contato conosco!</h2>
             <p>
@@ -256,7 +251,7 @@
               class="button"
               ><i class="icon-phone"></i>Reservas e Informações</a
             >
-            <div id="ManduuContainer">
+            <div id="ManduuContainer" itemprop="location" itemscope itemtype="http://schema.org/Restaurant">
               <a  href="https://manduu.com.br" target="_blank" > <p >Conheça nosso outro restaurante do Grupo: </p></a>
             
               <div id="ManduuContent">
@@ -308,15 +303,30 @@
     <div class="divider-1"></div>
     <footer class="section" id="footer">
       <div class="container grid">
-        <div class="footer-ours">
+        <div class="footer-ours" itemscope itemtype="http://schema.org/Restaurant">
           <h3>HORÁRIO DE FUNCIONAMENTO</h3>
-          <p>De terça a sexta</p>
-          <span>12:00 ás 16:00</span>
-          <span>18:00 ás 23:00</span>
-          <p>Sábado</p>
-          <span>12:00 ás 23:00</span>
-          <p>Domingo</p>
-          <span>12:00 ás 16:00</span>
+          <div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+            <p><span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek"><meta itemprop="name" content="Terça-feira">Terça a sexta</span></p>
+            <span itemprop="opens" content="12:00">12:00</span>
+            <span> ás </span>
+            <span itemprop="closes" content="16:00">16:00</span>
+            <br>
+            <span itemprop="opens" content="18:00">18:00</span>
+            <span> ás </span>
+            <span itemprop="closes" content="23:00">23:00</span>
+          </div>
+          <div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+            <p><span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek"><meta itemprop="name" content="Sábado">Sábado</span></p>
+            <span itemprop="opens" content="12:00">12:00</span>
+            <span> ás </span>
+            <span itemprop="closes" content="23:00">23:00</span>
+          </div>
+          <div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+            <p><span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek"><meta itemprop="name" content="Domingo">Domingo</span></p>
+            <span itemprop="opens" content="12:00">12:00</span>
+            <span> ás </span>
+            <span itemprop="closes" content="16:00">16:00</span>
+          </div>
         </div>
 
         <div class="social">
@@ -345,7 +355,7 @@
       target="_blank"
       class="back-to-top"
     >
-      <img src="./assets/fotos/zap.svg" alt="" />
+      <img src="./assets/fotos/zap.svg" alt="iconei do whatsapp" />
     </a>
 
     <!-- swiper -->
