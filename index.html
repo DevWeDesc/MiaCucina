@@ -6,8 +6,11 @@
     <!-- PAGE INFO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Restaurante Italiano localizado na cidade Santo andré, onde o site é possível realizar o agendamento e consultar o cardápio">
+    <meta name="keywords" content="Mia, Cucina, restaurante, santo, andré, italiano, melhor, preço, cardápio, vinho">
+    <meta name="author" content="Mia Cucina">
 
-    <link rel="icon" href="./assets/favicon.png" type="image/png">
+    <link rel="icon" href="./assets/favicon.ico" type="image/png">
     <title>Mia Cucina - Restaurante Italiano</title>
     <!-- Icones -->
     <link rel="stylesheet" href="assets/fonts/style.css" />
@@ -43,11 +46,11 @@
         <div class="subNavs">
           <div class="subMenus">
             <img src="assets/fotos/Alarm.svg" id="imgSubmenu" alt="iconei de relógio" />
-            <a class="" href="#footer">Horários</a>
+            <a href="#footer">Horários</a>
           </div>
           <div class="subMenus">
             <img src="assets/fotos/PhoneCall.svg"  id="imgSubmenu" alt="iconei de um telefone" />
-            <a>(11) 4992-1643</a>
+            <span>(11) 4992-1643</span>
           </div>
         </div>
   
@@ -77,10 +80,10 @@
         <div class="swiper-wrapper">
 
           <section  id="home" class="section swiper-slide" data-swiper-autoplay="3000" >
-            <img src="" id="overlay" alt="faixada externa do mia cucina">
+            <!-- <img src="" id="overlay" alt="faixada externa do mia cucina"> -->
             <div class="textContainer">
-              <p class="mainDescription">Bem vindos ao <span class="mainTitle">Mia Cucina</span>, um restaurante italiano em um dos melhores bairro da região de Santo André, um local aconchegante que traz o melhor da Toscana. 
-              </p>
+              <h1 class="mainDescription">Bem vindos ao <span class="mainTitle">Mia Cucina</span>, um restaurante italiano em um dos melhores bairro da região de Santo André, um local aconchegante que traz o melhor da Toscana. 
+              </h1>
               <div class="buttonMainContainer">
                 <button onclick="useNavigate('./galeria.html')" class="buttonMain">Galeria</button>
                 <button  onclick="useNavigate('https://api.whatsapp.com/send?phone=+551149921643&text=Oi! Gostaria de fazer uma reserva')"  class="buttonSecondary">Contato</button>
@@ -90,7 +93,7 @@
 
           
           <section class="section swiper-slide" id="space" data-swiper-autoplay="3000">
-            <img src="" id="overlay" alt="ambiente interno do mia cucina">
+            <!-- <img src="" id="overlay" alt="ambiente interno do mia cucina"> -->
             <div class="spaceContainer">
               <h2 class="spaceTitle">Nosso Espaço</h2>
               <p class="spaceDescription">Um espaço onde a atmosfera italiana ganha vida. Um salão amplo com luz natural e uma varanda incrível e charmosa para reunir famílias e amigos. </p>
@@ -104,7 +107,7 @@
 
 
           <section class="section swiper-slide" id="wines" data-swiper-autoplay="3000">
-            <img src="" id="overlay" alt="vinhos em exposição">
+            <!-- <img src="" id="overlay" alt="vinhos em exposição"> -->
             <div class="winesContainer">
              <h2 class="winesTitle" >Vinhos e Bebidas</h2>
              <p class="winesDescription">Aonde os melhores vinhos e bebidas se unem para criar uma experiência única.</p>
@@ -130,7 +133,7 @@
 
 
         <section  id="services" class="pricing-table"  >
-          <h1 id="underTitle">Cardápios</h1>
+          <h2 id="underTitle">Cardápios</h2>
           <p class="underText">Cardápios exclusivo no Mia Cucicna para você experimentar a verdadeira comida italiana</p>
           <section  id="services" class="pricing-table-two"  >
             <section  id="sectionMenu" class="ultimate best" style="--delay: 210ms">
