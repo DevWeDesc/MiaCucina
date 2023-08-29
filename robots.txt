@@ -1,0 +1,13 @@
+User-agent: *
+Disallow:
+
+User-agent: Googlebot-Image
+Disallow:
+
+Disallow: /assets/
+Disallow: /styles/
+Disallow: /swiper.js
+Disallow: /nav.js
+Disallow: /main.js
+
+Sitemap: https://www.restaurantemiacucina.com.br/sitemap.xml
