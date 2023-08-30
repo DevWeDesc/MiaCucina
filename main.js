@@ -4,9 +4,6 @@ const toggle = document.querySelectorAll('nav .toggle')
 
 /* Testimonials carousel slider swiper */
 
-
-
-
 for (const element of toggle) {
   element.addEventListener('click', function () {
     nav.classList.toggle('show')
@@ -21,10 +18,6 @@ for (const link of links) {
     nav.classList.remove('show')
   })
 }
-
-
-
-
 
 /* ScrollReveal: Mostrar elementos quando der scroll na página */
 const scrollReveal = ScrollReveal({
@@ -45,10 +38,6 @@ scrollReveal.reveal(
   { interval: 100 }
 )
 
-
-
-
-
 /*/* mudar o header da página quando der scroll */
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
@@ -62,7 +51,6 @@ function changeHeaderWhenScroll() {
     header.classList.remove('scroll')
   }
 }
-
 
 /* Botão voltar para o topo */
 const backToTopButton = document.querySelector('.back-to-top')
@@ -78,42 +66,13 @@ function useNavigate(path) {
   window.open(path, '_blank')
 }
 
-
 /* Navega HOME clicando na logo */
 function navigateHome() {
   window.location.href = '#home';
 }
 
-
-
-/* Menu ativo conforme a seção visível na página */
-// const sections = document.querySelectorAll('main section[id]')
-// function activateMenuAtCurrentSection() {
-//   const checkpoint = window.pageYOffset + (window.innerHeight / 8) * 4
-
-//   for (const section of sections) {
-//     const sectionTop = section.offsetTop
-//     const sectionHeight = section.offsetHeight
-//     const sectionId = section.getAttribute('id')
-
-//     const checkpointStart = checkpoint >= sectionTop
-//     const checkpointEnd = checkpoint <= sectionTop + sectionHeight
-
-//     if (checkpointStart && checkpointEnd) {
-//       document
-//         .querySelector('nav ul li a[href*=' + sectionId + ']')
-//         .classList.add('active')
-//     } else {
-//       document
-//         .querySelector('nav ul li a[href*=' + sectionId + ']')
-//         .classList.remove('active')
-//     }
-//   }
-// }
-
 /* When Scroll */
 window.addEventListener('scroll', function () {
   changeHeaderWhenScroll()
   backToTop()
-  // activateMenuAtCurrentSection()
 })

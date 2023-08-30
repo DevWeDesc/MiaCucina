@@ -203,7 +203,6 @@ justify-content: center;
   font-size: 1.45rem;
 }
 
-
 .buttonSpace {
   width: 320px;
   height: 38px;
@@ -225,8 +224,6 @@ justify-content: center;
   color: rgba(255,255,255,0.8);
   border-radius: 15px;
 }
-
-
 
 #wines {
   display: flex;
@@ -306,20 +303,6 @@ justify-content: center;
   transition: all 0.4s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .pricing-table {
   display: flex;
   flex-direction: column;
@@ -338,43 +321,44 @@ justify-content: center;
   justify-content: center;
 }
 
- .underText {
+.underText {
   display: none;
- }
+}
 
- #underTitle  {
+#underTitle  {
   display: none;
- }
+}
 
-  .subMenus:nth-child(2) {
-display: none;
-  }
+.subMenus:nth-child(2) {
+  display: none;
+}
 
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  #home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 .container .grid {
   max-width: 767px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
 }
-   #testimonials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
+#testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   
-  .winesContainer {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-  }
+.winesContainer {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
   
-  .swiper-button-next {
+.swiper-button-next {
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -385,7 +369,7 @@ display: none;
     border: none;
     margin-right: 1rem;
     padding: 1rem;
-  }
+}
   .swiper-button-prev {
     background-color: transparent;
     font-size: 18px;
